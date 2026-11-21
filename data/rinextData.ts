@@ -88,6 +88,6 @@ export const CLIENT_PORTFOLIO: ClientPortfolio[] = [
     service: "Web Développement & SEO",
     domain: "ahaa-rdc.org",
     url: "https://ahaa-rdc.org",
-    status: "",
+    status: "En cours",
   },
 ];

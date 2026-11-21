@@ -1,11 +1,16 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://rinext-digital.vercel.app"),
-  title: "RINEXT DIGITAL | Next Digital World — RDC (Uvira)",
+  title: {
+    default: "RINEXT DIGITAL | Next Digital World — RDC (Uvira)",
+    template: "%s | RINEXT DIGITAL",
+  },
   description:
-    "Fondée par Junior M. Richard. Développement web et design graphique, référencement SEO, audit systèmes & réseaux, et vente directe avec expédition de matériel informatique entre le Burundi et Uvira (RDC).",
+    "Fondée par Junior M. Richard. Développement web, référencement SEO, audit systèmes & réseaux, et vente directe avec expédition de matériel informatique et réseau à Uvira (RDC).",
   keywords: [
     "Rinext Digital",
     "Next Digital World",
@@ -24,7 +29,6 @@ export const metadata: Metadata = {
   verification: {
     google: "8ai-C6911h3toa6wY0Dq3kgNx_Hgd_nFlkOlU_Yr4g8",
   },
-  
   openGraph: {
     title: "RINEXT DIGITAL — Next Digital World",
     description:
@@ -33,12 +37,6 @@ export const metadata: Metadata = {
     siteName: "RINEXT DIGITAL",
     locale: "fr_FR",
     type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "RINEXT DIGITAL — Next Digital World",
-    description:
-      "Solutions web, SEO, audit réseau et matériel informatique en RDC (Uvira).",
   },
   robots: {
     index: true,
@@ -83,40 +81,6 @@ export default function RootLayout({
       "Audit Systèmes et Réseau",
       "Vente de matériel informatique et réseau",
     ],
-    hasOfferCatalog: {
-      "@type": "OfferCatalog",
-      name: "Services RINEXT DIGITAL",
-      itemListElement: [
-        {
-          "@type": "Offer",
-          itemOffered: {
-            "@type": "Service",
-            name: "Web Développement & Web Design",
-          },
-        },
-        {
-          "@type": "Offer",
-          itemOffered: {
-            "@type": "Service",
-            name: "SEO & Référencement",
-          },
-        },
-        {
-          "@type": "Offer",
-          itemOffered: {
-            "@type": "Service",
-            name: "Vente & Expédition de Matériel Informatique et Réseau",
-          },
-        },
-        {
-          "@type": "Offer",
-          itemOffered: {
-            "@type": "Service",
-            name: "Audit Systèmes & Réseau",
-          },
-        },
-      ],
-    },
   };
 
   return (
@@ -133,8 +97,10 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body className="font-sans antialiased selection:bg-[#0D64BA]/15 selection:text-[#0D64BA]">
-        {children}
+      <body className="min-h-screen flex flex-col bg-white text-slate-900 font-sans antialiased selection:bg-[#0D64BA]/15 selection:text-[#0D64BA]">
+        <Navbar />
+        <main className="flex-1">{children}</main>
+        <Footer />
       </body>
     </html>
   );
