@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://rinextdigital.com"),
+  metadataBase: new URL("https://rinext-digital.vercel.app"),
   title: "RINEXT DIGITAL | Next Digital World — RDC (Uvira)",
   description:
     "Fondée par Junior M. Richard. Développement web et design graphique, référencement SEO, audit systèmes & réseaux, et vente directe avec expédition de matériel informatique entre le Burundi et Uvira (RDC).",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     title: "RINEXT DIGITAL — Next Digital World",
     description:
       "Développement Web & Design, SEO, Audit Systèmes & Réseau, et Vente directe de matériel IT (Uvira RDC).",
-    url: "https://rinextdigital.com",
+    url: "https://rinext-digital.vercel.app",
     siteName: "RINEXT DIGITAL",
     locale: "fr_FR",
     type: "website",
@@ -52,8 +52,8 @@ export default function RootLayout({
     "@type": "ProfessionalService",
     name: "RINEXT DIGITAL",
     alternateName: "Next Digital World",
-    url: "https://rinextdigital.com",
-    logo: "https://rinextdigital.com/images/logo-rinext.png",
+    url: "https://rinext-digital.vercel.app",
+    logo: "https://rinext-digital.vercel.app/images/logo-rinext.png",
     founder: {
       "@type": "Person",
       name: "Junior M. Richard",

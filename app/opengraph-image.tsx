@@ -58,7 +58,7 @@ export default function OpenGraphImage() {
               letterSpacing: "0.1em",
             }}
           >
-            Next Digital World • RDC (Uvira) & Burundi
+            Next Digital World • Uvira (RDC)
           </div>
           <div
             style={{
@@ -85,7 +85,7 @@ export default function OpenGraphImage() {
         >
           <span>Fondée par Junior M. Richard</span>
           <span style={{ color: "#0D64BA", fontWeight: 700 }}>
-            WhatsApp : +257 77 172 580
+            WhatsApp : +243 97 44 51 186
           </span>
         </div>
       </div>

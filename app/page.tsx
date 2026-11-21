@@ -495,7 +495,7 @@ export default function RinextHomePage() {
               Parlons de votre projet
             </h2>
             <p className="text-sm text-slate-600 mt-2">
-              Sélectionnez votre service ou le matériel à commander et envoyez directement votre demande sur WhatsApp (+257 77 172 580).
+              Sélectionnez votre service ou le matériel à commander et envoyez directement votre demande sur WhatsApp (+243 97 44 51 186).
             </p>
           </div>
 
@@ -574,40 +574,20 @@ export default function RinextHomePage() {
         </div>
       </section>
 
-      {/* ==================== 7. FOOTER AVEC RÉFÉRENCES SEO ==================== */}
+      {/* ==================== 7. FOOTER ==================== */}
       <footer className="border-t border-slate-100 py-10 bg-white">
-        <div className="max-w-6xl mx-auto px-6 space-y-6">
-          <div className="flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
-            <div className="flex items-center gap-2.5">
-              <img
-                src="/images/logo-rinext.png"
-                alt="Logo RINEXT DIGITAL"
-                className="w-6 h-6 object-contain"
-              />
-              <span className="font-semibold text-slate-900">RINEXT DIGITAL</span>
-              <span>• Next Digital World</span>
-            </div>
-            <div>
-              © 2026 Rinext Digital — Uvira (RDC). Tous droits réservés.
-            </div>
+        <div className="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+          <div className="flex items-center gap-2.5">
+            <img
+              src="/images/logo-rinext.png"
+              alt="Logo RINEXT DIGITAL"
+              className="w-6 h-6 object-contain"
+            />
+            <span className="font-semibold text-slate-900">RINEXT DIGITAL</span>
+            <span>• Next Digital World</span>
           </div>
-
-          {/* Ligne SEO de référencement des sites conçus (méthode Amacue) */}
-          <div className="pt-4 border-t border-slate-100 flex flex-wrap items-center justify-between gap-2 text-[11px] text-slate-400">
-            <span>Réalisations web & partenaires :</span>
-            <div className="flex flex-wrap items-center gap-4">
-              {CLIENT_PORTFOLIO.map((org) => (
-                <a
-                  key={org.id}
-                  href={org.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-[#0D64BA] transition"
-                >
-                  {org.name} ({org.domain}) — Réalisé par Rinext Digital
-                </a>
-              ))}
-            </div>
+          <div>
+            © 2026 Rinext Digital — Uvira (RDC). Tous droits réservés.
           </div>
         </div>
       </footer>

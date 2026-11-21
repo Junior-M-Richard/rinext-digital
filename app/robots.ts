@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 
 export default function robots(): MetadataRoute.Robots {
-  const baseUrl = "https://rinextdigital.com"; // À remplacer par ton domaine final
+  const baseUrl = "https://rinext-digital.vercel.app"; // À remplacer par ton domaine final
 
   return {
     rules: {

@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://rinextdigital.com"; // À remplacer par ton domaine final une fois en ligne
+  const baseUrl = "https://rinext-digital.vercel.app"; // À remplacer par ton domaine final une fois en ligne
 
   return [
     {
