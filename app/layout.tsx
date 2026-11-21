@@ -21,6 +21,10 @@ export const metadata: Metadata = {
     shortcut: "/images/logo-rinext.png",
     apple: "/images/logo-rinext.png",
   },
+  verification: {
+    google: "8ai-C6911h3toa6wY0Dq3kgNx_Hgd_nFlkOlU_Yr4g8",
+  },
+  
   openGraph: {
     title: "RINEXT DIGITAL — Next Digital World",
     description:
